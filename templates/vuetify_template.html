@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+  <div id="app">
+    <v-app>
+      <v-content>
+        <nav_toolbar_and_drawer></nav_toolbar_and_drawer>
+        <v-container class="my-5">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptates culpa odio molestias nulla adipisci quisquam quo, illo sapiente non, sed molestiae minima recusandae nemo ea quos dolore ducimus nam.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos mollitia hic molestiae, fugit quae aut velit facilis quos porro doloribus quas iste vel illum. Nobis reprehenderit odio harum aliquid omnis.</p>
+          <a href="https://www.youtube.com"><v-btn class="my-5">youtube</v-btn></a> 
+          <v-spacer></v-spacer>
+          <a href="https://www.google.com"><v-btn class="my-5">google</v-btn></a>
+          <v-row  no-gutters>
+            <v-col
+              v-for="n in 12"
+              cols="1"            
+            >
+              <v-card
+                outlined
+                tile
+              >
+              [[n]]
+
+            </v-col>
+          </v-row>    
+      
+        </v-container>
+        
+
+        
+      </v-content>
+    </v-app>
+  </div>
+  <!-- =========================================================================== -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script src="{{url_for('static', filename='javascript/vuetify_toolbar.js')}}" charset="utf-8"></script>
+
+</body>
+
+</html>
